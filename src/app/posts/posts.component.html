@@ -1,0 +1,10 @@
+<div class="p-2 d-flex justify-content-end">
+  <button mat-raised-button color="accent" routerLink="new-post">Create new post</button>
+</div>
+
+<div>
+  <router-outlet/>
+</div>
+<div *ngFor="let post of posts">
+  <app-post-card [post]="post"/>
+</div>
